@@ -1,8 +1,8 @@
-﻿spring:
+spring:
   application:
     name: register-center
 server:
-  port: 7002
+  port: 7003
 eureka:
   server:
     enable-self-preservation: false
@@ -11,7 +11,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://eureka1:7001/eureka/,http://eureka3:7003/eureka/
+      defaultZone: http://eureka1:7001/eureka/,http://eureka2:7002/eureka/
   instance:
     prefer-ip-address: false
     hostname: localhost
